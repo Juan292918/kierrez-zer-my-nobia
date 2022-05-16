@@ -1,44 +1,51 @@
-.contenedor {
+.body {
   background: crimson;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  height: 100vh;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
+}
+
+.hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contenedor__titulo {
-  color: white;
+.hero__title {
   text-align: center;
 }
 
-.contenedor__imagen {
+.hero__image-container {
+  display: flex;
   width: 100%;
+  max-width: 512px;
   border-radius: 50%;
-  box-shadow: 0 5px 5px 0 black;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 0.5rem 0 black;
 }
 
-.contenedor__boton {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.hero__image {
+  width: 100%;
+}
+
+.hero__button {
   background: white;
-  border: 2px solid black;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 16px;
+  border: 0.125rem solid black;
+  border-radius: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
   font-weight: bold;
-  letter-spacing: 2px;
   cursor: pointer;
+  margin: 1em;
+  padding: 1em;
   transition: all 0.5s;
 }
 
-.contenedor__boton:hover {
-  box-shadow: 0 5px 5px 0 black;
-  filter: brightness(150%);
-  transform: scale(1.1);
-}
-
-.contenedor__boton:active {
-  transform: scale(0.9);
+.hero__button:hover {
+  box-shadow: 0 0.5rem 0.5rem 0 black;
+  filter: brightness(125%);
+  transform: scale(1.125);
 }
